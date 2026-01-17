@@ -1,0 +1,2428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ec2087f5fec405e54c4758fc23c82803 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ec2087f5fec405e54c4758fc23c82803" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ec2087f5fec405e54c4758fc23c82803 = L.map(
+                "map_ec2087f5fec405e54c4758fc23c82803",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_45e7dd1f65527e03f2e43e510dccb8bb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_45e7dd1f65527e03f2e43e510dccb8bb.addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+            var circle_marker_8eb4fdbd4fb1533c46e72236520308fa = L.circleMarker(
+                [40.76020258, -73.96478473],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.144102863722254, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_b3c77a661b2dacca7e791abf1a5d7665 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f3abd8bf92b261f6e13a46aaa7e959b = $(`<div id="html_7f3abd8bf92b261f6e13a46aaa7e959b" style="width: 100.0%; height: 100.0%;">Station: 2 Ave & E 58 St<br>Total Trips: 151<br>Avg Trip Duration: 17 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_b3c77a661b2dacca7e791abf1a5d7665.setContent(html_7f3abd8bf92b261f6e13a46aaa7e959b);
+            
+        
+
+        circle_marker_8eb4fdbd4fb1533c46e72236520308fa.bindPopup(popup_b3c77a661b2dacca7e791abf1a5d7665)
+        ;
+
+        
+    
+    
+            var circle_marker_2c09fe18c902d2124b151b418b607150 = L.circleMarker(
+                [40.687979, -73.978474],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.873397172404482, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_c7be5cd377056427adfc84aff1121c99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d077bf09d9e82651ad2c56b11d059ace = $(`<div id="html_d077bf09d9e82651ad2c56b11d059ace" style="width: 100.0%; height: 100.0%;">Station: Fulton St & Rockwell Pl<br>Total Trips: 95<br>Avg Trip Duration: 11 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_c7be5cd377056427adfc84aff1121c99.setContent(html_d077bf09d9e82651ad2c56b11d059ace);
+            
+        
+
+        circle_marker_2c09fe18c902d2124b151b418b607150.bindPopup(popup_c7be5cd377056427adfc84aff1121c99)
+        ;
+
+        
+    
+    
+            var circle_marker_83c7392fd2ac51f18207aada242d6747 = L.circleMarker(
+                [40.75828065, -73.97069431],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.082762530298219, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_0b5a345aa226dbce9b97983150b2f720 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0060ef83f3c877c97b176994b27af62b = $(`<div id="html_0060ef83f3c877c97b176994b27af62b" style="width: 100.0%; height: 100.0%;">Station: E 53 St & Lexington Ave<br>Total Trips: 148<br>Avg Trip Duration: 12 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_0b5a345aa226dbce9b97983150b2f720.setContent(html_0060ef83f3c877c97b176994b27af62b);
+            
+        
+
+        circle_marker_83c7392fd2ac51f18207aada242d6747.bindPopup(popup_0b5a345aa226dbce9b97983150b2f720)
+        ;
+
+        
+    
+    
+            var circle_marker_e0449d54d305cce2d222ee833f1302f9 = L.circleMarker(
+                [40.7403432, -73.98955109],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.660254037844387, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_65b1dcf5b65de3234a65649b9b89f305 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15ed780d035d1215147786919088be5d = $(`<div id="html_15ed780d035d1215147786919088be5d" style="width: 100.0%; height: 100.0%;">Station: Broadway & E 22 St<br>Total Trips: 300<br>Avg Trip Duration: 11 min<br>Avg Rider Age: 52</div>`)[0];
+                popup_65b1dcf5b65de3234a65649b9b89f305.setContent(html_15ed780d035d1215147786919088be5d);
+            
+        
+
+        circle_marker_e0449d54d305cce2d222ee833f1302f9.bindPopup(popup_65b1dcf5b65de3234a65649b9b89f305)
+        ;
+
+        
+    
+    
+            var circle_marker_38616a180cddfe9b957ae140fc9f4b5d = L.circleMarker(
+                [40.73331967, -73.99510132],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.363961030678928, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_47e574782b832a6db993d35d7ea8b3e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5956cbb74fc65b950285703e4760e402 = $(`<div id="html_5956cbb74fc65b950285703e4760e402" style="width: 100.0%; height: 100.0%;">Station: E 10 St & 5 Ave<br>Total Trips: 162<br>Avg Trip Duration: 11 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_47e574782b832a6db993d35d7ea8b3e7.setContent(html_5956cbb74fc65b950285703e4760e402);
+            
+        
+
+        circle_marker_38616a180cddfe9b957ae140fc9f4b5d.bindPopup(popup_47e574782b832a6db993d35d7ea8b3e7)
+        ;
+
+        
+    
+    
+            var circle_marker_ea8a24834a09086b7b021662f9baf7b3 = L.circleMarker(
+                [40.72938685, -73.97772429],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.576473218982953, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_a5d743d40b3be2716a960460d35bc172 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63df6a2e84d88ec8d9935a1a26bd241e = $(`<div id="html_63df6a2e84d88ec8d9935a1a26bd241e" style="width: 100.0%; height: 100.0%;">Station: E 14 St & Avenue B<br>Total Trips: 173<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_a5d743d40b3be2716a960460d35bc172.setContent(html_63df6a2e84d88ec8d9935a1a26bd241e);
+            
+        
+
+        circle_marker_ea8a24834a09086b7b021662f9baf7b3.bindPopup(popup_a5d743d40b3be2716a960460d35bc172)
+        ;
+
+        
+    
+    
+            var circle_marker_00fc58b8b1c9010118e5d4b21c323d20 = L.circleMarker(
+                [40.69766564, -73.98476437],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.345207879911715, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_9f05a3a2b071d7666493773350875237 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eefe80edfa883942bbec5b29c4f63759 = $(`<div id="html_eefe80edfa883942bbec5b29c4f63759" style="width: 100.0%; height: 100.0%;">Station: Concord St & Bridge St<br>Total Trips: 22<br>Avg Trip Duration: 19 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_9f05a3a2b071d7666493773350875237.setContent(html_eefe80edfa883942bbec5b29c4f63759);
+            
+        
+
+        circle_marker_00fc58b8b1c9010118e5d4b21c323d20.bindPopup(popup_9f05a3a2b071d7666493773350875237)
+        ;
+
+        
+    
+    
+            var circle_marker_338f29b235dd978d4a58600b40c7e922 = L.circleMarker(
+                [40.72873888, -74.00748842],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.73212459828649, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_bd2ced432dfa4d215a1e6f931ba2223a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8ce843c11a198772836d6c60fb11bb7 = $(`<div id="html_c8ce843c11a198772836d6c60fb11bb7" style="width: 100.0%; height: 100.0%;">Station: W Houston St & Hudson St<br>Total Trips: 305<br>Avg Trip Duration: 15 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_bd2ced432dfa4d215a1e6f931ba2223a.setContent(html_c8ce843c11a198772836d6c60fb11bb7);
+            
+        
+
+        circle_marker_338f29b235dd978d4a58600b40c7e922.bindPopup(popup_bd2ced432dfa4d215a1e6f931ba2223a)
+        ;
+
+        
+    
+    
+            var circle_marker_f4a966eb7234cdc09cc39a4a3bd47918 = L.circleMarker(
+                [40.73224119, -74.00026394],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.744562646538029, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_9445fdf1d3f3c06f468df6b6c3066112 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d347d3f73833800091b2f49c72bad30 = $(`<div id="html_5d347d3f73833800091b2f49c72bad30" style="width: 100.0%; height: 100.0%;">Station: Washington Pl & 6 Ave<br>Total Trips: 132<br>Avg Trip Duration: 12 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_9445fdf1d3f3c06f468df6b6c3066112.setContent(html_5d347d3f73833800091b2f49c72bad30);
+            
+        
+
+        circle_marker_f4a966eb7234cdc09cc39a4a3bd47918.bindPopup(popup_9445fdf1d3f3c06f468df6b6c3066112)
+        ;
+
+        
+    
+    
+            var circle_marker_844c7971963371225399aa3637690d66 = L.circleMarker(
+                [40.7149787, -74.013012],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.123475382979799, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_b1bc8325da816beea3ed2d4bc5fdfb9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5b03dfbce9c6d3d8c6732d017f86802 = $(`<div id="html_f5b03dfbce9c6d3d8c6732d017f86802" style="width: 100.0%; height: 100.0%;">Station: Murray St & West St<br>Total Trips: 105<br>Avg Trip Duration: 16 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_b1bc8325da816beea3ed2d4bc5fdfb9e.setContent(html_f5b03dfbce9c6d3d8c6732d017f86802);
+            
+        
+
+        circle_marker_844c7971963371225399aa3637690d66.bindPopup(popup_b1bc8325da816beea3ed2d4bc5fdfb9e)
+        ;
+
+        
+    
+    
+            var circle_marker_6b84e812dc7439955fd70803466d2315 = L.circleMarker(
+                [40.71542197, -74.01121978],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.396427811873332, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_2c1a06fc56b21f34680f029fad521372 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1655ff8ace420e56706157f5fdf246be = $(`<div id="html_1655ff8ace420e56706157f5fdf246be" style="width: 100.0%; height: 100.0%;">Station: Greenwich St & Warren St<br>Total Trips: 282<br>Avg Trip Duration: 15 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_2c1a06fc56b21f34680f029fad521372.setContent(html_1655ff8ace420e56706157f5fdf246be);
+            
+        
+
+        circle_marker_6b84e812dc7439955fd70803466d2315.bindPopup(popup_2c1a06fc56b21f34680f029fad521372)
+        ;
+
+        
+    
+    
+            var circle_marker_55009890c38f65448ba5a950ae6a78c4 = L.circleMarker(
+                [40.739323, -74.008119],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.297259759663212, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_c82b4c87580a37e39f8c085311a17125 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a20959def8ff8ee8157d918953b05e2e = $(`<div id="html_a20959def8ff8ee8157d918953b05e2e" style="width: 100.0%; height: 100.0%;">Station: Washington St & Gansevoort St<br>Total Trips: 213<br>Avg Trip Duration: 15 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_c82b4c87580a37e39f8c085311a17125.setContent(html_a20959def8ff8ee8157d918953b05e2e);
+            
+        
+
+        circle_marker_55009890c38f65448ba5a950ae6a78c4.bindPopup(popup_c82b4c87580a37e39f8c085311a17125)
+        ;
+
+        
+    
+    
+            var circle_marker_fa363eb93ff88452aaf0f88c2f98ec58 = L.circleMarker(
+                [40.68764484, -73.96968902],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0413812651491097, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_4394595e8b7bb7a2fe33f0e79ce2183e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d30f0f439b5779811f117e15bf9ed3f = $(`<div id="html_6d30f0f439b5779811f117e15bf9ed3f" style="width: 100.0%; height: 100.0%;">Station: Clermont Ave & Lafayette Ave<br>Total Trips: 37<br>Avg Trip Duration: 11 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_4394595e8b7bb7a2fe33f0e79ce2183e.setContent(html_6d30f0f439b5779811f117e15bf9ed3f);
+            
+        
+
+        circle_marker_fa363eb93ff88452aaf0f88c2f98ec58.bindPopup(popup_4394595e8b7bb7a2fe33f0e79ce2183e)
+        ;
+
+        
+    
+    
+            var circle_marker_b7523bca52130b63f0fdaeebe74cc7ac = L.circleMarker(
+                [40.76228826, -73.98336183],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.59545297913646, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_f068f93a59e91d2851f17fe79639c871 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06ffa5584cb074acb4555e4d758cba9b = $(`<div id="html_06ffa5584cb074acb4555e4d758cba9b" style="width: 100.0%; height: 100.0%;">Station: Broadway & W 51 St<br>Total Trips: 174<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_f068f93a59e91d2851f17fe79639c871.setContent(html_06ffa5584cb074acb4555e4d758cba9b);
+            
+        
+
+        circle_marker_b7523bca52130b63f0fdaeebe74cc7ac.bindPopup(popup_f068f93a59e91d2851f17fe79639c871)
+        ;
+
+        
+    
+    
+            var circle_marker_065f1bce00fd2a7352152b98422ac1d3 = L.circleMarker(
+                [40.7153379, -74.01658354],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.587782018658833, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_b6ffd79fc3f6c57eb24d14270180e73f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b77e2f50e465ffca203533f94b90831 = $(`<div id="html_6b77e2f50e465ffca203533f94b90831" style="width: 100.0%; height: 100.0%;">Station: Vesey Pl & River Terrace<br>Total Trips: 295<br>Avg Trip Duration: 16 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_b6ffd79fc3f6c57eb24d14270180e73f.setContent(html_6b77e2f50e465ffca203533f94b90831);
+            
+        
+
+        circle_marker_065f1bce00fd2a7352152b98422ac1d3.bindPopup(popup_b6ffd79fc3f6c57eb24d14270180e73f)
+        ;
+
+        
+    
+    
+            var circle_marker_442ff287f2a1a2d2d0506ca2982e1d97 = L.circleMarker(
+                [40.75714758, -73.97207836],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.916079783099616, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_c0c6407a022402b59e404c61e2592ab5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0bc879444d9bab5f8a1b5cf340c3680 = $(`<div id="html_d0bc879444d9bab5f8a1b5cf340c3680" style="width: 100.0%; height: 100.0%;">Station: E 51 St & Lexington Ave<br>Total Trips: 140<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_c0c6407a022402b59e404c61e2592ab5.setContent(html_d0bc879444d9bab5f8a1b5cf340c3680);
+            
+        
+
+        circle_marker_442ff287f2a1a2d2d0506ca2982e1d97.bindPopup(popup_c0c6407a022402b59e404c61e2592ab5)
+        ;
+
+        
+    
+    
+            var circle_marker_ed2ed8d8c8f67ba1c0bbc8d805255cb4 = L.circleMarker(
+                [40.74780373, -73.9734419],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.558621384311845, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_63cb6dd0a9c6902e6cc57c27fa4bd1be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a02a133b9a3e33b07447e8de5ff7b8c = $(`<div id="html_1a02a133b9a3e33b07447e8de5ff7b8c" style="width: 100.0%; height: 100.0%;">Station: E 39 St & 2 Ave<br>Total Trips: 293<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_63cb6dd0a9c6902e6cc57c27fa4bd1be.setContent(html_1a02a133b9a3e33b07447e8de5ff7b8c);
+            
+        
+
+        circle_marker_ed2ed8d8c8f67ba1c0bbc8d805255cb4.bindPopup(popup_63cb6dd0a9c6902e6cc57c27fa4bd1be)
+        ;
+
+        
+    
+    
+            var circle_marker_5d95ca1867d1ef9b00042a0bf6646df6 = L.circleMarker(
+                [40.69196566, -73.9813018],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7080992435478315, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_9de3601069626136c80593a3a65ae12d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35aa54c22d8c79b73402754805c1cc9a = $(`<div id="html_35aa54c22d8c79b73402754805c1cc9a" style="width: 100.0%; height: 100.0%;">Station: Willoughby St & Fleet St<br>Total Trips: 55<br>Avg Trip Duration: 9 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_9de3601069626136c80593a3a65ae12d.setContent(html_35aa54c22d8c79b73402754805c1cc9a);
+            
+        
+
+        circle_marker_5d95ca1867d1ef9b00042a0bf6646df6.bindPopup(popup_9de3601069626136c80593a3a65ae12d)
+        ;
+
+        
+    
+    
+            var circle_marker_a5b95c77dcb1222d110502b7a096b920 = L.circleMarker(
+                [40.70037867, -73.99548059],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5355339059327378, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_a458809da3d7122a1e9c3bbf0a204050 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6099882990bf2009fb47fba35ccde38 = $(`<div id="html_c6099882990bf2009fb47fba35ccde38" style="width: 100.0%; height: 100.0%;">Station: Columbia Heights & Cranberry St<br>Total Trips: 50<br>Avg Trip Duration: 15 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_a458809da3d7122a1e9c3bbf0a204050.setContent(html_c6099882990bf2009fb47fba35ccde38);
+            
+        
+
+        circle_marker_a5b95c77dcb1222d110502b7a096b920.bindPopup(popup_a458809da3d7122a1e9c3bbf0a204050)
+        ;
+
+        
+    
+    
+            var circle_marker_6bb33ee73818b08c19f29e1c16330aed = L.circleMarker(
+                [40.68864636, -73.98263429],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.8708286933869707, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_e0e25b03c56d3a97b9a68e34d517b31b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87b2466415e9a20d746da5258a6f54e4 = $(`<div id="html_87b2466415e9a20d746da5258a6f54e4" style="width: 100.0%; height: 100.0%;">Station: Hanover Pl & Livingston St<br>Total Trips: 14<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_e0e25b03c56d3a97b9a68e34d517b31b.setContent(html_87b2466415e9a20d746da5258a6f54e4);
+            
+        
+
+        circle_marker_6bb33ee73818b08c19f29e1c16330aed.bindPopup(popup_e0e25b03c56d3a97b9a68e34d517b31b)
+        ;
+
+        
+    
+    
+            var circle_marker_31e55bfd22e3427c9cf403289f344490 = L.circleMarker(
+                [40.751396, -74.005226],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.454356057317857, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_6d7953df159fa137fb71538264e6867f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67f28ea6d7823cbb3ac0708ea3604586 = $(`<div id="html_67f28ea6d7823cbb3ac0708ea3604586" style="width: 100.0%; height: 100.0%;">Station: 11 Ave & W 27 St<br>Total Trips: 119<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_6d7953df159fa137fb71538264e6867f.setContent(html_67f28ea6d7823cbb3ac0708ea3604586);
+            
+        
+
+        circle_marker_31e55bfd22e3427c9cf403289f344490.bindPopup(popup_6d7953df159fa137fb71538264e6867f)
+        ;
+
+        
+    
+    
+            var circle_marker_33fa1708d6a0d21105dae85e5136650e = L.circleMarker(
+                [40.70365182, -74.01167797],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.06201920231798, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_5857f946526b9996901167647fda5cfc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca7b57514138bc82a6a5c6948fb004c4 = $(`<div id="html_ca7b57514138bc82a6a5c6948fb004c4" style="width: 100.0%; height: 100.0%;">Station: Broad St & Bridge St<br>Total Trips: 66<br>Avg Trip Duration: 19 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_5857f946526b9996901167647fda5cfc.setContent(html_ca7b57514138bc82a6a5c6948fb004c4);
+            
+        
+
+        circle_marker_33fa1708d6a0d21105dae85e5136650e.bindPopup(popup_5857f946526b9996901167647fda5cfc)
+        ;
+
+        
+    
+    
+            var circle_marker_1878cfb8af192ef6feaebbe896478d3f = L.circleMarker(
+                [40.74394314, -73.97966069],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.306623862918075, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_d6062b11621a055dec229c3099d449e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b61a32131e1e2e399add86a75cb120f8 = $(`<div id="html_b61a32131e1e2e399add86a75cb120f8" style="width: 100.0%; height: 100.0%;">Station: E 31 St & 3 Ave<br>Total Trips: 276<br>Avg Trip Duration: 12 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_d6062b11621a055dec229c3099d449e9.setContent(html_b61a32131e1e2e399add86a75cb120f8);
+            
+        
+
+        circle_marker_1878cfb8af192ef6feaebbe896478d3f.bindPopup(popup_d6062b11621a055dec229c3099d449e9)
+        ;
+
+        
+    
+    
+            var circle_marker_6a7706bacf349d1abdd73053a7696ec6 = L.circleMarker(
+                [40.76584941, -73.98690506],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.924428900898052, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_834bf6943dbaa02ffd7cc851f9936750 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa7ce1556c25f7fd09d144657df702e8 = $(`<div id="html_aa7ce1556c25f7fd09d144657df702e8" style="width: 100.0%; height: 100.0%;">Station: W 54 St & 9 Ave<br>Total Trips: 97<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_834bf6943dbaa02ffd7cc851f9936750.setContent(html_aa7ce1556c25f7fd09d144657df702e8);
+            
+        
+
+        circle_marker_6a7706bacf349d1abdd73053a7696ec6.bindPopup(popup_834bf6943dbaa02ffd7cc851f9936750)
+        ;
+
+        
+    
+    
+            var circle_marker_d13a25123c5cffed32789f746f2068d3 = L.circleMarker(
+                [40.722055, -73.989111],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4031242374328485, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_26df8583c59440b52f6dc4e2b2fcd392 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22a81a36b899a5f477b03db135618792 = $(`<div id="html_22a81a36b899a5f477b03db135618792" style="width: 100.0%; height: 100.0%;">Station: Allen St & E Houston St<br>Total Trips: 164<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_26df8583c59440b52f6dc4e2b2fcd392.setContent(html_22a81a36b899a5f477b03db135618792);
+            
+        
+
+        circle_marker_d13a25123c5cffed32789f746f2068d3.bindPopup(popup_26df8583c59440b52f6dc4e2b2fcd392)
+        ;
+
+        
+    
+    
+            var circle_marker_b377579b1f9c34e6b1bfbc3e643b119d = L.circleMarker(
+                [40.73587678, -73.98205027],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.245688373094719, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_8be9bb8fbd82f6321b2125645bea3188 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_442d0621968e3a4d39b0fe93a3981f02 = $(`<div id="html_442d0621968e3a4d39b0fe93a3981f02" style="width: 100.0%; height: 100.0%;">Station: E 20 St & 2 Ave<br>Total Trips: 210<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_8be9bb8fbd82f6321b2125645bea3188.setContent(html_442d0621968e3a4d39b0fe93a3981f02);
+            
+        
+
+        circle_marker_b377579b1f9c34e6b1bfbc3e643b119d.bindPopup(popup_8be9bb8fbd82f6321b2125645bea3188)
+        ;
+
+        
+    
+    
+            var circle_marker_7a5e0d0dd231a3ea3ab61d16fff00bc8 = L.circleMarker(
+                [40.73401143, -74.00293877],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.82344135219425, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_18715e594d066dc775a2fbc91e70ad97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c54ae845268ceab72a801e223c2b95d = $(`<div id="html_2c54ae845268ceab72a801e223c2b95d" style="width: 100.0%; height: 100.0%;">Station: W 4 St & 7 Ave S<br>Total Trips: 386<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_18715e594d066dc775a2fbc91e70ad97.setContent(html_2c54ae845268ceab72a801e223c2b95d);
+            
+        
+
+        circle_marker_7a5e0d0dd231a3ea3ab61d16fff00bc8.bindPopup(popup_18715e594d066dc775a2fbc91e70ad97)
+        ;
+
+        
+    
+    
+            var circle_marker_26411c7cbc2584d6bff8b84ed4c710a0 = L.circleMarker(
+                [40.68926942, -73.98912867],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.172040216394301, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_8062c5746c6f315d572abc456a237ca0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1495864b99fa72286ed7ccef23a585ee = $(`<div id="html_1495864b99fa72286ed7ccef23a585ee" style="width: 100.0%; height: 100.0%;">Station: State St & Smith St<br>Total Trips: 107<br>Avg Trip Duration: 17 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_8062c5746c6f315d572abc456a237ca0.setContent(html_1495864b99fa72286ed7ccef23a585ee);
+            
+        
+
+        circle_marker_26411c7cbc2584d6bff8b84ed4c710a0.bindPopup(popup_8062c5746c6f315d572abc456a237ca0)
+        ;
+
+        
+    
+    
+            var circle_marker_8f784215580765de44b01955a37e5ee8 = L.circleMarker(
+                [40.74971775, -74.00295035],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.88986691902975, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_ed2d4fa2e8feea860a623ae8b7ebb59b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45f36dd4d1121516816a46ac0db27adc = $(`<div id="html_45f36dd4d1121516816a46ac0db27adc" style="width: 100.0%; height: 100.0%;">Station: W 26 St & 10 Ave<br>Total Trips: 249<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 52</div>`)[0];
+                popup_ed2d4fa2e8feea860a623ae8b7ebb59b.setContent(html_45f36dd4d1121516816a46ac0db27adc);
+            
+        
+
+        circle_marker_8f784215580765de44b01955a37e5ee8.bindPopup(popup_ed2d4fa2e8feea860a623ae8b7ebb59b)
+        ;
+
+        
+    
+    
+            var circle_marker_2af738e4750466912f2bcf478fd4cfb3 = L.circleMarker(
+                [40.72110063, -73.9919254],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.809475019311125, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_4052c7cc68662972bd6d0465cf14a5bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a734ee836b0fb431bca2f35835633145 = $(`<div id="html_a734ee836b0fb431bca2f35835633145" style="width: 100.0%; height: 100.0%;">Station: Rivington St & Chrystie St<br>Total Trips: 135<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_4052c7cc68662972bd6d0465cf14a5bd.setContent(html_a734ee836b0fb431bca2f35835633145);
+            
+        
+
+        circle_marker_2af738e4750466912f2bcf478fd4cfb3.bindPopup(popup_4052c7cc68662972bd6d0465cf14a5bd)
+        ;
+
+        
+    
+    
+            var circle_marker_78e799f0e3038cfc57fb923ffccf0453 = L.circleMarker(
+                [40.73543934, -73.99453948],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_6cfe193fc3d8d97090c900a57a781841 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_725db8de90b2957cf964bdccbe0489af = $(`<div id="html_725db8de90b2957cf964bdccbe0489af" style="width: 100.0%; height: 100.0%;">Station: W 13 St & 5 Ave<br>Total Trips: 169<br>Avg Trip Duration: 11 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_6cfe193fc3d8d97090c900a57a781841.setContent(html_725db8de90b2957cf964bdccbe0489af);
+            
+        
+
+        circle_marker_78e799f0e3038cfc57fb923ffccf0453.bindPopup(popup_6cfe193fc3d8d97090c900a57a781841)
+        ;
+
+        
+    
+    
+            var circle_marker_b961fe20d0fcc5ea45898e26b83b2de2 = L.circleMarker(
+                [40.76341379, -73.99667444],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.852349955359813, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_64af8bb622a590a871ccd49eea3960b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6fbcceb85d67466be7f63da000cec71 = $(`<div id="html_f6fbcceb85d67466be7f63da000cec71" style="width: 100.0%; height: 100.0%;">Station: W 46 St & 11 Ave<br>Total Trips: 137<br>Avg Trip Duration: 17 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_64af8bb622a590a871ccd49eea3960b5.setContent(html_f6fbcceb85d67466be7f63da000cec71);
+            
+        
+
+        circle_marker_b961fe20d0fcc5ea45898e26b83b2de2.bindPopup(popup_64af8bb622a590a871ccd49eea3960b5)
+        ;
+
+        
+    
+    
+            var circle_marker_ee05fbf6cff49c27e287cfc089b1cb48 = L.circleMarker(
+                [40.70706456, -74.00731853],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.363961030678928, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_21edde9457b90af8fbe86c8040e19ad5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f732f809b6f40bc6bf3e2ea8f4e5281 = $(`<div id="html_3f732f809b6f40bc6bf3e2ea8f4e5281" style="width: 100.0%; height: 100.0%;">Station: Maiden Ln & Pearl St<br>Total Trips: 162<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_21edde9457b90af8fbe86c8040e19ad5.setContent(html_3f732f809b6f40bc6bf3e2ea8f4e5281);
+            
+        
+
+        circle_marker_ee05fbf6cff49c27e287cfc089b1cb48.bindPopup(popup_21edde9457b90af8fbe86c8040e19ad5)
+        ;
+
+        
+    
+    
+            var circle_marker_ba0cf62f37e78e6ebfce8fdbe5fbd98c = L.circleMarker(
+                [40.71406667, -73.99293911],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.58257569495584, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_71db6bc222408bcddb78ed5c56dc10c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9e3471817026aa635a7c9e6275a47f1 = $(`<div id="html_a9e3471817026aa635a7c9e6275a47f1" style="width: 100.0%; height: 100.0%;">Station: Pike St & E Broadway<br>Total Trips: 84<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_71db6bc222408bcddb78ed5c56dc10c9.setContent(html_a9e3471817026aa635a7c9e6275a47f1);
+            
+        
+
+        circle_marker_ba0cf62f37e78e6ebfce8fdbe5fbd98c.bindPopup(popup_71db6bc222408bcddb78ed5c56dc10c9)
+        ;
+
+        
+    
+    
+            var circle_marker_486510deb7fe3882f6fcdc45340f223b = L.circleMarker(
+                [40.74345335, -74.00004031],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.98212002188447, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_18c2545ce3b44924c0acc10c37211495 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3ab715f977068e6abb0b87f3b3a2925 = $(`<div id="html_d3ab715f977068e6abb0b87f3b3a2925" style="width: 100.0%; height: 100.0%;">Station: W 20 St & 8 Ave<br>Total Trips: 195<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_18c2545ce3b44924c0acc10c37211495.setContent(html_d3ab715f977068e6abb0b87f3b3a2925);
+            
+        
+
+        circle_marker_486510deb7fe3882f6fcdc45340f223b.bindPopup(popup_18c2545ce3b44924c0acc10c37211495)
+        ;
+
+        
+    
+    
+            var circle_marker_abc83c02dc1d941298b005de65c8f1e2 = L.circleMarker(
+                [40.72490985, -74.00154702],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.399324293474371, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_3747f0a2b1e66720a2be71893bea8cd0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3ed477895fb4df0a99c3b8ada8645d5 = $(`<div id="html_b3ed477895fb4df0a99c3b8ada8645d5" style="width: 100.0%; height: 100.0%;">Station: W Broadway & Spring St<br>Total Trips: 219<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_3747f0a2b1e66720a2be71893bea8cd0.setContent(html_b3ed477895fb4df0a99c3b8ada8645d5);
+            
+        
+
+        circle_marker_abc83c02dc1d941298b005de65c8f1e2.bindPopup(popup_3747f0a2b1e66720a2be71893bea8cd0)
+        ;
+
+        
+    
+    
+            var circle_marker_51426c98910bd7facd566873dfb4ce5c = L.circleMarker(
+                [40.69512845, -73.99595065],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.58257569495584, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_46dc447b7e2a04c269acf2e33ead2300 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f03c52523ec5035168e0ecc35699a341 = $(`<div id="html_f03c52523ec5035168e0ecc35699a341" style="width: 100.0%; height: 100.0%;">Station: Hicks St & Montague St<br>Total Trips: 84<br>Avg Trip Duration: 15 min<br>Avg Rider Age: 52</div>`)[0];
+                popup_46dc447b7e2a04c269acf2e33ead2300.setContent(html_f03c52523ec5035168e0ecc35699a341);
+            
+        
+
+        circle_marker_51426c98910bd7facd566873dfb4ce5c.bindPopup(popup_46dc447b7e2a04c269acf2e33ead2300)
+        ;
+
+        
+    
+    
+            var circle_marker_38b7e1e5ca847968a5fa8f51bb237bad = L.circleMarker(
+                [40.7652654, -73.98192338],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.365459931328117, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_c6dc6653bd5d6b6cad4214af21f6264b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a5e1b5f9262a069e0fe63e2eaae7c41 = $(`<div id="html_8a5e1b5f9262a069e0fe63e2eaae7c41" style="width: 100.0%; height: 100.0%;">Station: Broadway & W 55 St<br>Total Trips: 217<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_c6dc6653bd5d6b6cad4214af21f6264b.setContent(html_8a5e1b5f9262a069e0fe63e2eaae7c41);
+            
+        
+
+        circle_marker_38b7e1e5ca847968a5fa8f51bb237bad.bindPopup(popup_c6dc6653bd5d6b6cad4214af21f6264b)
+        ;
+
+        
+    
+    
+            var circle_marker_34aca3f75a3474de34aa683f49a64c4e = L.circleMarker(
+                [40.72368361, -73.97574813],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.958039891549808, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_adfca24b5c5f9fcb4734ffbd4fb00b26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39641d8c744057fc41052e4cb4dc2a2f = $(`<div id="html_39641d8c744057fc41052e4cb4dc2a2f" style="width: 100.0%; height: 100.0%;">Station: Avenue D & E 8 St<br>Total Trips: 35<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_adfca24b5c5f9fcb4734ffbd4fb00b26.setContent(html_39641d8c744057fc41052e4cb4dc2a2f);
+            
+        
+
+        circle_marker_34aca3f75a3474de34aa683f49a64c4e.bindPopup(popup_adfca24b5c5f9fcb4734ffbd4fb00b26)
+        ;
+
+        
+    
+    
+            var circle_marker_58aae53124bd73e4074268c1609d7d42 = L.circleMarker(
+                [40.69580705, -73.97355569],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7080992435478315, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_098a142a859763d7cef74ad22f5ff771 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8ce80e61480726e8f8daaf7b9d919fe = $(`<div id="html_c8ce80e61480726e8f8daaf7b9d919fe" style="width: 100.0%; height: 100.0%;">Station: Carlton Ave & Park Ave<br>Total Trips: 55<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_098a142a859763d7cef74ad22f5ff771.setContent(html_c8ce80e61480726e8f8daaf7b9d919fe);
+            
+        
+
+        circle_marker_58aae53124bd73e4074268c1609d7d42.bindPopup(popup_098a142a859763d7cef74ad22f5ff771)
+        ;
+
+        
+    
+    
+            var circle_marker_8d8daf493c3d181ec361415cacb4d19e = L.circleMarker(
+                [40.7643971, -73.97371465],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.04673846971554, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_11384f5b8d3b2f9ad147daee1999ad12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddabf2bd88444a31d84737a2f35abdd9 = $(`<div id="html_ddabf2bd88444a31d84737a2f35abdd9" style="width: 100.0%; height: 100.0%;">Station: Grand Army Plaza & Central Park S<br>Total Trips: 259<br>Avg Trip Duration: 20 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_11384f5b8d3b2f9ad147daee1999ad12.setContent(html_ddabf2bd88444a31d84737a2f35abdd9);
+            
+        
+
+        circle_marker_8d8daf493c3d181ec361415cacb4d19e.bindPopup(popup_11384f5b8d3b2f9ad147daee1999ad12)
+        ;
+
+        
+    
+    
+            var circle_marker_bca207529599415bd96f94ae5c651596 = L.circleMarker(
+                [40.76269882, -73.99301222],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.916079783099616, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_b76cf0350ec8c94d69b70cb8fe890a46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d24ac50051471b8ac103869ae6a2a0a = $(`<div id="html_3d24ac50051471b8ac103869ae6a2a0a" style="width: 100.0%; height: 100.0%;">Station: W 47 St & 10 Ave<br>Total Trips: 140<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_b76cf0350ec8c94d69b70cb8fe890a46.setContent(html_3d24ac50051471b8ac103869ae6a2a0a);
+            
+        
+
+        circle_marker_bca207529599415bd96f94ae5c651596.bindPopup(popup_b76cf0350ec8c94d69b70cb8fe890a46)
+        ;
+
+        
+    
+    
+            var circle_marker_2c7550d80ce8cd73cc334ea77c5d5085 = L.circleMarker(
+                [40.68216564, -73.95399026],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0615528128088303, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_d5a3c4fbbbae6232d49ec8913f58160c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fa27c177117f7ec5f500883d290eeb0 = $(`<div id="html_1fa27c177117f7ec5f500883d290eeb0" style="width: 100.0%; height: 100.0%;">Station: Hancock St & Bedford Ave<br>Total Trips: 17<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 47</div>`)[0];
+                popup_d5a3c4fbbbae6232d49ec8913f58160c.setContent(html_1fa27c177117f7ec5f500883d290eeb0);
+            
+        
+
+        circle_marker_2c7550d80ce8cd73cc334ea77c5d5085.bindPopup(popup_d5a3c4fbbbae6232d49ec8913f58160c)
+        ;
+
+        
+    
+    
+            var circle_marker_79bb1cb85da9bc7754bb335a32981d33 = L.circleMarker(
+                [40.73314259, -73.97573881],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.422616289332565, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_ec20e7995a6b70e888fb62d927175a4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6e12a4466c25bb70813780a73c31bfb = $(`<div id="html_c6e12a4466c25bb70813780a73c31bfb" style="width: 100.0%; height: 100.0%;">Station: E 20 St & FDR Drive<br>Total Trips: 165<br>Avg Trip Duration: 16 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_ec20e7995a6b70e888fb62d927175a4d.setContent(html_c6e12a4466c25bb70813780a73c31bfb);
+            
+        
+
+        circle_marker_79bb1cb85da9bc7754bb335a32981d33.bindPopup(popup_ec20e7995a6b70e888fb62d927175a4d)
+        ;
+
+        
+    
+    
+            var circle_marker_26fa32a5a76c060a900d901838affa95 = L.circleMarker(
+                [40.74238787, -73.99726235],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.108637370113428, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_a63c818ca3d76d7304818979c71cbeb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_513582ba54d5481967a1710dc2b4ef93 = $(`<div id="html_513582ba54d5481967a1710dc2b4ef93" style="width: 100.0%; height: 100.0%;">Station: W 20 St & 7 Ave<br>Total Trips: 263<br>Avg Trip Duration: 12 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_a63c818ca3d76d7304818979c71cbeb3.setContent(html_513582ba54d5481967a1710dc2b4ef93);
+            
+        
+
+        circle_marker_26fa32a5a76c060a900d901838affa95.bindPopup(popup_a63c818ca3d76d7304818979c71cbeb3)
+        ;
+
+        
+    
+    
+            var circle_marker_77821fd7e5c9d89aac304204c8fc5b8e = L.circleMarker(
+                [40.73454567, -73.99074142],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.024968827881711, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_d108bac4dc9e4e780725add72d5fe1fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_646e7159e164bd9645ef14cc03c34f31 = $(`<div id="html_646e7159e164bd9645ef14cc03c34f31" style="width: 100.0%; height: 100.0%;">Station: Broadway & E 14 St<br>Total Trips: 402<br>Avg Trip Duration: 12 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_d108bac4dc9e4e780725add72d5fe1fd.setContent(html_646e7159e164bd9645ef14cc03c34f31);
+            
+        
+
+        circle_marker_77821fd7e5c9d89aac304204c8fc5b8e.bindPopup(popup_d108bac4dc9e4e780725add72d5fe1fd)
+        ;
+
+        
+    
+    
+            var circle_marker_eec24d57ecf5bce29b4ec75895d7a71c = L.circleMarker(
+                [40.7172274, -73.98802084],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.809475019311125, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_087542df4590c23a691f732609eb9eb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f27ae7760326755e3fa2c9cac5327137 = $(`<div id="html_f27ae7760326755e3fa2c9cac5327137" style="width: 100.0%; height: 100.0%;">Station: Norfolk St & Broome St<br>Total Trips: 135<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_087542df4590c23a691f732609eb9eb0.setContent(html_f27ae7760326755e3fa2c9cac5327137);
+            
+        
+
+        circle_marker_eec24d57ecf5bce29b4ec75895d7a71c.bindPopup(popup_087542df4590c23a691f732609eb9eb0)
+        ;
+
+        
+    
+    
+            var circle_marker_c786a62d49eaaac66f0ec54a1aa6d3e8 = L.circleMarker(
+                [40.770513, -73.988038],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.264982043070834, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_5a0cf993686838605e1262e4f1499b75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_066efa795293b7c2d7a85dd8916e3b99 = $(`<div id="html_066efa795293b7c2d7a85dd8916e3b99" style="width: 100.0%; height: 100.0%;">Station: W 59 St & 10 Ave<br>Total Trips: 157<br>Avg Trip Duration: 16 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_5a0cf993686838605e1262e4f1499b75.setContent(html_066efa795293b7c2d7a85dd8916e3b99);
+            
+        
+
+        circle_marker_c786a62d49eaaac66f0ec54a1aa6d3e8.bindPopup(popup_5a0cf993686838605e1262e4f1499b75)
+        ;
+
+        
+    
+    
+            var circle_marker_31753da098f34b09d8d891b76fe14ddf = L.circleMarker(
+                [40.7597108, -73.97402311],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.244997998398398, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_9567b0eb37719d4f1acf6c723ea733d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36f28831d6bf6e66120dbb1b305ebc1c = $(`<div id="html_36f28831d6bf6e66120dbb1b305ebc1c" style="width: 100.0%; height: 100.0%;">Station: E 53 St & Madison Ave<br>Total Trips: 156<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_9567b0eb37719d4f1acf6c723ea733d4.setContent(html_36f28831d6bf6e66120dbb1b305ebc1c);
+            
+        
+
+        circle_marker_31753da098f34b09d8d891b76fe14ddf.bindPopup(popup_9567b0eb37719d4f1acf6c723ea733d4)
+        ;
+
+        
+    
+    
+            var circle_marker_476e6898b0738d2b32cc81f1cf646fc2 = L.circleMarker(
+                [40.72453734, -73.98185424],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0710678118654755, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_4fad18b9559c7b0856ac599a1b9f2c95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23cc54d75d81ec9d1ed9f5b313f38733 = $(`<div id="html_23cc54d75d81ec9d1ed9f5b313f38733" style="width: 100.0%; height: 100.0%;">Station: E 6 St & Avenue B<br>Total Trips: 200<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_4fad18b9559c7b0856ac599a1b9f2c95.setContent(html_23cc54d75d81ec9d1ed9f5b313f38733);
+            
+        
+
+        circle_marker_476e6898b0738d2b32cc81f1cf646fc2.bindPopup(popup_4fad18b9559c7b0856ac599a1b9f2c95)
+        ;
+
+        
+    
+    
+            tile_layer_45e7dd1f65527e03f2e43e510dccb8bb.addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+            var circle_marker_0ef3db6bdcc30c86262a45d72b0b79d5 = L.circleMarker(
+                [40.76020258, -73.96478473],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.144102863722254, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_415cea1725b8680f54d8e52c201388d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_473f1d2a2c3732f9500f6155805d295e = $(`<div id="html_473f1d2a2c3732f9500f6155805d295e" style="width: 100.0%; height: 100.0%;">Station: 2 Ave & E 58 St<br>Total Trips: 151<br>Avg Trip Duration: 17 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_415cea1725b8680f54d8e52c201388d7.setContent(html_473f1d2a2c3732f9500f6155805d295e);
+            
+        
+
+        circle_marker_0ef3db6bdcc30c86262a45d72b0b79d5.bindPopup(popup_415cea1725b8680f54d8e52c201388d7)
+        ;
+
+        
+    
+    
+            var circle_marker_aadbb3fb19066010fa12dea9fc61e721 = L.circleMarker(
+                [40.687979, -73.978474],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.873397172404482, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_43d64a5609a4cd50fca9eff9f56e16fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea2a5816b205619773adbef2847b93a3 = $(`<div id="html_ea2a5816b205619773adbef2847b93a3" style="width: 100.0%; height: 100.0%;">Station: Fulton St & Rockwell Pl<br>Total Trips: 95<br>Avg Trip Duration: 11 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_43d64a5609a4cd50fca9eff9f56e16fd.setContent(html_ea2a5816b205619773adbef2847b93a3);
+            
+        
+
+        circle_marker_aadbb3fb19066010fa12dea9fc61e721.bindPopup(popup_43d64a5609a4cd50fca9eff9f56e16fd)
+        ;
+
+        
+    
+    
+            var circle_marker_a29a29d11381f041ad6442d6d4f5dc86 = L.circleMarker(
+                [40.75828065, -73.97069431],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.082762530298219, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_58d9c67afec27745c3850effb1431347 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a35ff4864b1d6b7d07cc00f0def7200f = $(`<div id="html_a35ff4864b1d6b7d07cc00f0def7200f" style="width: 100.0%; height: 100.0%;">Station: E 53 St & Lexington Ave<br>Total Trips: 148<br>Avg Trip Duration: 12 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_58d9c67afec27745c3850effb1431347.setContent(html_a35ff4864b1d6b7d07cc00f0def7200f);
+            
+        
+
+        circle_marker_a29a29d11381f041ad6442d6d4f5dc86.bindPopup(popup_58d9c67afec27745c3850effb1431347)
+        ;
+
+        
+    
+    
+            var circle_marker_dbdcf92f9d9f5612d0bdabec09688f10 = L.circleMarker(
+                [40.7403432, -73.98955109],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.660254037844387, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_d757f892356e6e7f51da1c603d2afc35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da218e6aa0797ccbb0bade5801a4a877 = $(`<div id="html_da218e6aa0797ccbb0bade5801a4a877" style="width: 100.0%; height: 100.0%;">Station: Broadway & E 22 St<br>Total Trips: 300<br>Avg Trip Duration: 11 min<br>Avg Rider Age: 52</div>`)[0];
+                popup_d757f892356e6e7f51da1c603d2afc35.setContent(html_da218e6aa0797ccbb0bade5801a4a877);
+            
+        
+
+        circle_marker_dbdcf92f9d9f5612d0bdabec09688f10.bindPopup(popup_d757f892356e6e7f51da1c603d2afc35)
+        ;
+
+        
+    
+    
+            var circle_marker_2b15dd7377584a7791390e9f21919370 = L.circleMarker(
+                [40.73331967, -73.99510132],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.363961030678928, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_6ef843e781e35eee712727cf895820aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c7065eddd231bc8b7fb6b1d62af9668 = $(`<div id="html_9c7065eddd231bc8b7fb6b1d62af9668" style="width: 100.0%; height: 100.0%;">Station: E 10 St & 5 Ave<br>Total Trips: 162<br>Avg Trip Duration: 11 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_6ef843e781e35eee712727cf895820aa.setContent(html_9c7065eddd231bc8b7fb6b1d62af9668);
+            
+        
+
+        circle_marker_2b15dd7377584a7791390e9f21919370.bindPopup(popup_6ef843e781e35eee712727cf895820aa)
+        ;
+
+        
+    
+    
+            var circle_marker_84f6ce46d3f5cec8798ae11dc7a49bfe = L.circleMarker(
+                [40.72938685, -73.97772429],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.576473218982953, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_717c12a559fc2c99543a879e4cd5f972 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ed109db21ad5ec61f0c727063728bb1 = $(`<div id="html_0ed109db21ad5ec61f0c727063728bb1" style="width: 100.0%; height: 100.0%;">Station: E 14 St & Avenue B<br>Total Trips: 173<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_717c12a559fc2c99543a879e4cd5f972.setContent(html_0ed109db21ad5ec61f0c727063728bb1);
+            
+        
+
+        circle_marker_84f6ce46d3f5cec8798ae11dc7a49bfe.bindPopup(popup_717c12a559fc2c99543a879e4cd5f972)
+        ;
+
+        
+    
+    
+            var circle_marker_4a101685d8d01511a80b8e0668bb5774 = L.circleMarker(
+                [40.69766564, -73.98476437],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.345207879911715, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_4de310f0078514241854b6710f29cb9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75ffa0a5d64b3de80a3fa2317c0064a8 = $(`<div id="html_75ffa0a5d64b3de80a3fa2317c0064a8" style="width: 100.0%; height: 100.0%;">Station: Concord St & Bridge St<br>Total Trips: 22<br>Avg Trip Duration: 19 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_4de310f0078514241854b6710f29cb9d.setContent(html_75ffa0a5d64b3de80a3fa2317c0064a8);
+            
+        
+
+        circle_marker_4a101685d8d01511a80b8e0668bb5774.bindPopup(popup_4de310f0078514241854b6710f29cb9d)
+        ;
+
+        
+    
+    
+            var circle_marker_62086f481e0c53af64f1cf866d227ebe = L.circleMarker(
+                [40.72873888, -74.00748842],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.73212459828649, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_0316e0292df9e1422cd151bde4b507b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_816be8b4d0688cff5d29ef24a79510cf = $(`<div id="html_816be8b4d0688cff5d29ef24a79510cf" style="width: 100.0%; height: 100.0%;">Station: W Houston St & Hudson St<br>Total Trips: 305<br>Avg Trip Duration: 15 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_0316e0292df9e1422cd151bde4b507b3.setContent(html_816be8b4d0688cff5d29ef24a79510cf);
+            
+        
+
+        circle_marker_62086f481e0c53af64f1cf866d227ebe.bindPopup(popup_0316e0292df9e1422cd151bde4b507b3)
+        ;
+
+        
+    
+    
+            var circle_marker_70dae4bf7d3a97524c975c50daa5de7e = L.circleMarker(
+                [40.73224119, -74.00026394],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.744562646538029, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_88b0bcefafde8f9c2a3200e03149dc1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4eb208be26f90c53cca8a0a8385f922a = $(`<div id="html_4eb208be26f90c53cca8a0a8385f922a" style="width: 100.0%; height: 100.0%;">Station: Washington Pl & 6 Ave<br>Total Trips: 132<br>Avg Trip Duration: 12 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_88b0bcefafde8f9c2a3200e03149dc1b.setContent(html_4eb208be26f90c53cca8a0a8385f922a);
+            
+        
+
+        circle_marker_70dae4bf7d3a97524c975c50daa5de7e.bindPopup(popup_88b0bcefafde8f9c2a3200e03149dc1b)
+        ;
+
+        
+    
+    
+            var circle_marker_8be9d2e354be1817813cb1e36163cfac = L.circleMarker(
+                [40.7149787, -74.013012],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.123475382979799, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_dc0ad00c1e1ec4c83e629340fdb5828e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d703dd85bd55782fcd67d152e6ad397 = $(`<div id="html_0d703dd85bd55782fcd67d152e6ad397" style="width: 100.0%; height: 100.0%;">Station: Murray St & West St<br>Total Trips: 105<br>Avg Trip Duration: 16 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_dc0ad00c1e1ec4c83e629340fdb5828e.setContent(html_0d703dd85bd55782fcd67d152e6ad397);
+            
+        
+
+        circle_marker_8be9d2e354be1817813cb1e36163cfac.bindPopup(popup_dc0ad00c1e1ec4c83e629340fdb5828e)
+        ;
+
+        
+    
+    
+            var circle_marker_b72807f9f06ecdd137d02ac8007aff8d = L.circleMarker(
+                [40.71542197, -74.01121978],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.396427811873332, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_29b6ddf676abfe398de7daee1d7b6644 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c0edea4bc08804bcef5c6f80cae6037 = $(`<div id="html_4c0edea4bc08804bcef5c6f80cae6037" style="width: 100.0%; height: 100.0%;">Station: Greenwich St & Warren St<br>Total Trips: 282<br>Avg Trip Duration: 15 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_29b6ddf676abfe398de7daee1d7b6644.setContent(html_4c0edea4bc08804bcef5c6f80cae6037);
+            
+        
+
+        circle_marker_b72807f9f06ecdd137d02ac8007aff8d.bindPopup(popup_29b6ddf676abfe398de7daee1d7b6644)
+        ;
+
+        
+    
+    
+            var circle_marker_a2cfaa8132e65473c5594594932a07e3 = L.circleMarker(
+                [40.739323, -74.008119],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.297259759663212, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_5cbee04d6340075017d84a43ce5e54cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1406dcfa9e048f97e0751fc4f8e5dcb = $(`<div id="html_d1406dcfa9e048f97e0751fc4f8e5dcb" style="width: 100.0%; height: 100.0%;">Station: Washington St & Gansevoort St<br>Total Trips: 213<br>Avg Trip Duration: 15 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_5cbee04d6340075017d84a43ce5e54cf.setContent(html_d1406dcfa9e048f97e0751fc4f8e5dcb);
+            
+        
+
+        circle_marker_a2cfaa8132e65473c5594594932a07e3.bindPopup(popup_5cbee04d6340075017d84a43ce5e54cf)
+        ;
+
+        
+    
+    
+            var circle_marker_ea16499d5d25720b58e6dd5b4c4e4ba7 = L.circleMarker(
+                [40.68764484, -73.96968902],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0413812651491097, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_b36ac0a8c053cd9195ca32e1828572cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73de8ac4c0ee0fc69fbbe13e11fbeab5 = $(`<div id="html_73de8ac4c0ee0fc69fbbe13e11fbeab5" style="width: 100.0%; height: 100.0%;">Station: Clermont Ave & Lafayette Ave<br>Total Trips: 37<br>Avg Trip Duration: 11 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_b36ac0a8c053cd9195ca32e1828572cd.setContent(html_73de8ac4c0ee0fc69fbbe13e11fbeab5);
+            
+        
+
+        circle_marker_ea16499d5d25720b58e6dd5b4c4e4ba7.bindPopup(popup_b36ac0a8c053cd9195ca32e1828572cd)
+        ;
+
+        
+    
+    
+            var circle_marker_0752eb3320516eca1005da778cb6b249 = L.circleMarker(
+                [40.76228826, -73.98336183],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.59545297913646, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_a90ba34ca09350355712dafe734cd8ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2a6b8b7a39d00e7a1d5d8ecf0d06664 = $(`<div id="html_c2a6b8b7a39d00e7a1d5d8ecf0d06664" style="width: 100.0%; height: 100.0%;">Station: Broadway & W 51 St<br>Total Trips: 174<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_a90ba34ca09350355712dafe734cd8ea.setContent(html_c2a6b8b7a39d00e7a1d5d8ecf0d06664);
+            
+        
+
+        circle_marker_0752eb3320516eca1005da778cb6b249.bindPopup(popup_a90ba34ca09350355712dafe734cd8ea)
+        ;
+
+        
+    
+    
+            var circle_marker_b4a38d3c248a6605bdecc3c3c2262fe9 = L.circleMarker(
+                [40.7153379, -74.01658354],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.587782018658833, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_bf983a48c57eaf98e492a4a4772b494b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1854e882862083c2851b7102cde42b0 = $(`<div id="html_c1854e882862083c2851b7102cde42b0" style="width: 100.0%; height: 100.0%;">Station: Vesey Pl & River Terrace<br>Total Trips: 295<br>Avg Trip Duration: 16 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_bf983a48c57eaf98e492a4a4772b494b.setContent(html_c1854e882862083c2851b7102cde42b0);
+            
+        
+
+        circle_marker_b4a38d3c248a6605bdecc3c3c2262fe9.bindPopup(popup_bf983a48c57eaf98e492a4a4772b494b)
+        ;
+
+        
+    
+    
+            var circle_marker_b509bc7bcc96895b5bd2aded37f20731 = L.circleMarker(
+                [40.75714758, -73.97207836],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.916079783099616, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_fdbc43b3f8f1ba696c6aef7a83d4cbb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fcbe8de8b46fb662ecab662c8bc18a9 = $(`<div id="html_6fcbe8de8b46fb662ecab662c8bc18a9" style="width: 100.0%; height: 100.0%;">Station: E 51 St & Lexington Ave<br>Total Trips: 140<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_fdbc43b3f8f1ba696c6aef7a83d4cbb4.setContent(html_6fcbe8de8b46fb662ecab662c8bc18a9);
+            
+        
+
+        circle_marker_b509bc7bcc96895b5bd2aded37f20731.bindPopup(popup_fdbc43b3f8f1ba696c6aef7a83d4cbb4)
+        ;
+
+        
+    
+    
+            var circle_marker_e5faea1aece7cdd15aecf916b17ec509 = L.circleMarker(
+                [40.74780373, -73.9734419],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.558621384311845, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_60fe753212e27a844401107297e411f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c6d13b0c2ef2474d32e7a05db51ebd5 = $(`<div id="html_6c6d13b0c2ef2474d32e7a05db51ebd5" style="width: 100.0%; height: 100.0%;">Station: E 39 St & 2 Ave<br>Total Trips: 293<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_60fe753212e27a844401107297e411f2.setContent(html_6c6d13b0c2ef2474d32e7a05db51ebd5);
+            
+        
+
+        circle_marker_e5faea1aece7cdd15aecf916b17ec509.bindPopup(popup_60fe753212e27a844401107297e411f2)
+        ;
+
+        
+    
+    
+            var circle_marker_f18ca9aff5f0bfb6276807aa59a5d418 = L.circleMarker(
+                [40.69196566, -73.9813018],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7080992435478315, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_c06cafaadb4999aba39fb59604162c27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13d55c8b67f04c2ed3fc4ebe040b7a22 = $(`<div id="html_13d55c8b67f04c2ed3fc4ebe040b7a22" style="width: 100.0%; height: 100.0%;">Station: Willoughby St & Fleet St<br>Total Trips: 55<br>Avg Trip Duration: 9 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_c06cafaadb4999aba39fb59604162c27.setContent(html_13d55c8b67f04c2ed3fc4ebe040b7a22);
+            
+        
+
+        circle_marker_f18ca9aff5f0bfb6276807aa59a5d418.bindPopup(popup_c06cafaadb4999aba39fb59604162c27)
+        ;
+
+        
+    
+    
+            var circle_marker_5834e5d86bf2d1e0092e7a0927fcdbed = L.circleMarker(
+                [40.70037867, -73.99548059],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5355339059327378, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_13725e27cd5107a7d63fe84032ddbdeb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97a6744632b2fc2a7d095194997e3ddc = $(`<div id="html_97a6744632b2fc2a7d095194997e3ddc" style="width: 100.0%; height: 100.0%;">Station: Columbia Heights & Cranberry St<br>Total Trips: 50<br>Avg Trip Duration: 15 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_13725e27cd5107a7d63fe84032ddbdeb.setContent(html_97a6744632b2fc2a7d095194997e3ddc);
+            
+        
+
+        circle_marker_5834e5d86bf2d1e0092e7a0927fcdbed.bindPopup(popup_13725e27cd5107a7d63fe84032ddbdeb)
+        ;
+
+        
+    
+    
+            var circle_marker_66740815360fc6edffad6171e21a2a6a = L.circleMarker(
+                [40.68864636, -73.98263429],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.8708286933869707, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_3e422e07337d392c2883088c3ebca7ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_806a851db63333745cc1b179ebea1b5f = $(`<div id="html_806a851db63333745cc1b179ebea1b5f" style="width: 100.0%; height: 100.0%;">Station: Hanover Pl & Livingston St<br>Total Trips: 14<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_3e422e07337d392c2883088c3ebca7ac.setContent(html_806a851db63333745cc1b179ebea1b5f);
+            
+        
+
+        circle_marker_66740815360fc6edffad6171e21a2a6a.bindPopup(popup_3e422e07337d392c2883088c3ebca7ac)
+        ;
+
+        
+    
+    
+            var circle_marker_53eb6c01f900bd7f9a48e2830934f155 = L.circleMarker(
+                [40.751396, -74.005226],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.454356057317857, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_7dc91e2d6695360e2aa054099864c0df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97cbde6af982fb812ce333f9662ee680 = $(`<div id="html_97cbde6af982fb812ce333f9662ee680" style="width: 100.0%; height: 100.0%;">Station: 11 Ave & W 27 St<br>Total Trips: 119<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_7dc91e2d6695360e2aa054099864c0df.setContent(html_97cbde6af982fb812ce333f9662ee680);
+            
+        
+
+        circle_marker_53eb6c01f900bd7f9a48e2830934f155.bindPopup(popup_7dc91e2d6695360e2aa054099864c0df)
+        ;
+
+        
+    
+    
+            var circle_marker_50416b0c040a9df3a0d803b621bc1d40 = L.circleMarker(
+                [40.70365182, -74.01167797],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.06201920231798, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_75c1d6244acafd42d80c0d747bdfd460 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4440553f6eab7975fea9a0436679782c = $(`<div id="html_4440553f6eab7975fea9a0436679782c" style="width: 100.0%; height: 100.0%;">Station: Broad St & Bridge St<br>Total Trips: 66<br>Avg Trip Duration: 19 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_75c1d6244acafd42d80c0d747bdfd460.setContent(html_4440553f6eab7975fea9a0436679782c);
+            
+        
+
+        circle_marker_50416b0c040a9df3a0d803b621bc1d40.bindPopup(popup_75c1d6244acafd42d80c0d747bdfd460)
+        ;
+
+        
+    
+    
+            var circle_marker_d1a8bb13d9abe2750ad87614a340a727 = L.circleMarker(
+                [40.74394314, -73.97966069],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.306623862918075, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_3b26ea8db6679d33c419dd399f461521 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_653b105631bcfd8b5461c0dc620f6690 = $(`<div id="html_653b105631bcfd8b5461c0dc620f6690" style="width: 100.0%; height: 100.0%;">Station: E 31 St & 3 Ave<br>Total Trips: 276<br>Avg Trip Duration: 12 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_3b26ea8db6679d33c419dd399f461521.setContent(html_653b105631bcfd8b5461c0dc620f6690);
+            
+        
+
+        circle_marker_d1a8bb13d9abe2750ad87614a340a727.bindPopup(popup_3b26ea8db6679d33c419dd399f461521)
+        ;
+
+        
+    
+    
+            var circle_marker_fc97e4a349621255492a2c0775c950e3 = L.circleMarker(
+                [40.76584941, -73.98690506],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.924428900898052, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_bb98d7cccd468f91f58eee89da6b4d6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9af7772358fda62d2246b5a30ad0bfc2 = $(`<div id="html_9af7772358fda62d2246b5a30ad0bfc2" style="width: 100.0%; height: 100.0%;">Station: W 54 St & 9 Ave<br>Total Trips: 97<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_bb98d7cccd468f91f58eee89da6b4d6f.setContent(html_9af7772358fda62d2246b5a30ad0bfc2);
+            
+        
+
+        circle_marker_fc97e4a349621255492a2c0775c950e3.bindPopup(popup_bb98d7cccd468f91f58eee89da6b4d6f)
+        ;
+
+        
+    
+    
+            var circle_marker_a697839d9928c1084e6af23e06222760 = L.circleMarker(
+                [40.722055, -73.989111],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4031242374328485, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_1ee1b5e778ba5db088ab352dfbd932bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09a6bc1e983e94172e0e52768a9f52d8 = $(`<div id="html_09a6bc1e983e94172e0e52768a9f52d8" style="width: 100.0%; height: 100.0%;">Station: Allen St & E Houston St<br>Total Trips: 164<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_1ee1b5e778ba5db088ab352dfbd932bc.setContent(html_09a6bc1e983e94172e0e52768a9f52d8);
+            
+        
+
+        circle_marker_a697839d9928c1084e6af23e06222760.bindPopup(popup_1ee1b5e778ba5db088ab352dfbd932bc)
+        ;
+
+        
+    
+    
+            var circle_marker_fb80e62aa2bb3d9136b1f38c723d5965 = L.circleMarker(
+                [40.73587678, -73.98205027],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.245688373094719, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_f6f79f54866faddd82b5993b170b3232 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c051fb160fef39a3489ec3d4870e26d7 = $(`<div id="html_c051fb160fef39a3489ec3d4870e26d7" style="width: 100.0%; height: 100.0%;">Station: E 20 St & 2 Ave<br>Total Trips: 210<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_f6f79f54866faddd82b5993b170b3232.setContent(html_c051fb160fef39a3489ec3d4870e26d7);
+            
+        
+
+        circle_marker_fb80e62aa2bb3d9136b1f38c723d5965.bindPopup(popup_f6f79f54866faddd82b5993b170b3232)
+        ;
+
+        
+    
+    
+            var circle_marker_20993410d752288ad2b2ca6538b3e39a = L.circleMarker(
+                [40.73401143, -74.00293877],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.82344135219425, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_a17bc3005a4c394a2d0e9fdee6d14aa8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b27e4900c2f233af23413d166798021c = $(`<div id="html_b27e4900c2f233af23413d166798021c" style="width: 100.0%; height: 100.0%;">Station: W 4 St & 7 Ave S<br>Total Trips: 386<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_a17bc3005a4c394a2d0e9fdee6d14aa8.setContent(html_b27e4900c2f233af23413d166798021c);
+            
+        
+
+        circle_marker_20993410d752288ad2b2ca6538b3e39a.bindPopup(popup_a17bc3005a4c394a2d0e9fdee6d14aa8)
+        ;
+
+        
+    
+    
+            var circle_marker_96857b946f15c80b90f798be6ee17c60 = L.circleMarker(
+                [40.68926942, -73.98912867],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.172040216394301, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_a6c897e2785fdc2bd869b71cd138ea66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a0beb966ce014525588010355d96f4e = $(`<div id="html_6a0beb966ce014525588010355d96f4e" style="width: 100.0%; height: 100.0%;">Station: State St & Smith St<br>Total Trips: 107<br>Avg Trip Duration: 17 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_a6c897e2785fdc2bd869b71cd138ea66.setContent(html_6a0beb966ce014525588010355d96f4e);
+            
+        
+
+        circle_marker_96857b946f15c80b90f798be6ee17c60.bindPopup(popup_a6c897e2785fdc2bd869b71cd138ea66)
+        ;
+
+        
+    
+    
+            var circle_marker_28f76d3dc075c5355faa90cda6b13df6 = L.circleMarker(
+                [40.74971775, -74.00295035],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.88986691902975, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_82c6573e8e69849f3c459590b6153c3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31ab64324a35344386d865e867ecd5ec = $(`<div id="html_31ab64324a35344386d865e867ecd5ec" style="width: 100.0%; height: 100.0%;">Station: W 26 St & 10 Ave<br>Total Trips: 249<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 52</div>`)[0];
+                popup_82c6573e8e69849f3c459590b6153c3d.setContent(html_31ab64324a35344386d865e867ecd5ec);
+            
+        
+
+        circle_marker_28f76d3dc075c5355faa90cda6b13df6.bindPopup(popup_82c6573e8e69849f3c459590b6153c3d)
+        ;
+
+        
+    
+    
+            var circle_marker_a58c92fe4a1888f88b6259cfbd42a4ec = L.circleMarker(
+                [40.72110063, -73.9919254],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.809475019311125, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_fe125647263e4d1e8892e5b96de9ef56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_008f7ecf34017cf2604107275a658749 = $(`<div id="html_008f7ecf34017cf2604107275a658749" style="width: 100.0%; height: 100.0%;">Station: Rivington St & Chrystie St<br>Total Trips: 135<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_fe125647263e4d1e8892e5b96de9ef56.setContent(html_008f7ecf34017cf2604107275a658749);
+            
+        
+
+        circle_marker_a58c92fe4a1888f88b6259cfbd42a4ec.bindPopup(popup_fe125647263e4d1e8892e5b96de9ef56)
+        ;
+
+        
+    
+    
+            var circle_marker_4be8a3cdd6e32bb03597021a14f346cc = L.circleMarker(
+                [40.73543934, -73.99453948],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_9d1a2b5360ae314d11cd5b9ec360c052 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee0ba60edbc7e76e76999845c8de03e3 = $(`<div id="html_ee0ba60edbc7e76e76999845c8de03e3" style="width: 100.0%; height: 100.0%;">Station: W 13 St & 5 Ave<br>Total Trips: 169<br>Avg Trip Duration: 11 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_9d1a2b5360ae314d11cd5b9ec360c052.setContent(html_ee0ba60edbc7e76e76999845c8de03e3);
+            
+        
+
+        circle_marker_4be8a3cdd6e32bb03597021a14f346cc.bindPopup(popup_9d1a2b5360ae314d11cd5b9ec360c052)
+        ;
+
+        
+    
+    
+            var circle_marker_14ff4d7d401407089d318f929dadbdbb = L.circleMarker(
+                [40.76341379, -73.99667444],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.852349955359813, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_9c845ea8233bc0e43c96912898ba2a46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b9d68ee093564fa0e74cf03e77a55ba = $(`<div id="html_5b9d68ee093564fa0e74cf03e77a55ba" style="width: 100.0%; height: 100.0%;">Station: W 46 St & 11 Ave<br>Total Trips: 137<br>Avg Trip Duration: 17 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_9c845ea8233bc0e43c96912898ba2a46.setContent(html_5b9d68ee093564fa0e74cf03e77a55ba);
+            
+        
+
+        circle_marker_14ff4d7d401407089d318f929dadbdbb.bindPopup(popup_9c845ea8233bc0e43c96912898ba2a46)
+        ;
+
+        
+    
+    
+            var circle_marker_9582f23da18aeabf9c5a4effe198d8c5 = L.circleMarker(
+                [40.70706456, -74.00731853],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.363961030678928, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_2f48d8f1334fbd9c18f797de68ad908d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a61647f6e0b02a241e49884c1a8449d2 = $(`<div id="html_a61647f6e0b02a241e49884c1a8449d2" style="width: 100.0%; height: 100.0%;">Station: Maiden Ln & Pearl St<br>Total Trips: 162<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_2f48d8f1334fbd9c18f797de68ad908d.setContent(html_a61647f6e0b02a241e49884c1a8449d2);
+            
+        
+
+        circle_marker_9582f23da18aeabf9c5a4effe198d8c5.bindPopup(popup_2f48d8f1334fbd9c18f797de68ad908d)
+        ;
+
+        
+    
+    
+            var circle_marker_e0d7162dc87f95cc9d4822da5336e79e = L.circleMarker(
+                [40.71406667, -73.99293911],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.58257569495584, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_e03d2c6fb3ae4fc2dd05682efb3f5f56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bd8e2b6504bb5ccf598ecda7cd0a08d = $(`<div id="html_1bd8e2b6504bb5ccf598ecda7cd0a08d" style="width: 100.0%; height: 100.0%;">Station: Pike St & E Broadway<br>Total Trips: 84<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_e03d2c6fb3ae4fc2dd05682efb3f5f56.setContent(html_1bd8e2b6504bb5ccf598ecda7cd0a08d);
+            
+        
+
+        circle_marker_e0d7162dc87f95cc9d4822da5336e79e.bindPopup(popup_e03d2c6fb3ae4fc2dd05682efb3f5f56)
+        ;
+
+        
+    
+    
+            var circle_marker_0850ff851158d6b9318ff85e89a0a94d = L.circleMarker(
+                [40.74345335, -74.00004031],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.98212002188447, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_169efb6bc1a9a3ed6eb37f3fbc8ced17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0122c27865c737bb86a105c6310230fd = $(`<div id="html_0122c27865c737bb86a105c6310230fd" style="width: 100.0%; height: 100.0%;">Station: W 20 St & 8 Ave<br>Total Trips: 195<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_169efb6bc1a9a3ed6eb37f3fbc8ced17.setContent(html_0122c27865c737bb86a105c6310230fd);
+            
+        
+
+        circle_marker_0850ff851158d6b9318ff85e89a0a94d.bindPopup(popup_169efb6bc1a9a3ed6eb37f3fbc8ced17)
+        ;
+
+        
+    
+    
+            var circle_marker_ea8ffd0bfe60eba0686678fadbe8bd56 = L.circleMarker(
+                [40.72490985, -74.00154702],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.399324293474371, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_34a21d04ffa8224e6a502a827ef0595c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0750239de87820f468201d26d101d249 = $(`<div id="html_0750239de87820f468201d26d101d249" style="width: 100.0%; height: 100.0%;">Station: W Broadway & Spring St<br>Total Trips: 219<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_34a21d04ffa8224e6a502a827ef0595c.setContent(html_0750239de87820f468201d26d101d249);
+            
+        
+
+        circle_marker_ea8ffd0bfe60eba0686678fadbe8bd56.bindPopup(popup_34a21d04ffa8224e6a502a827ef0595c)
+        ;
+
+        
+    
+    
+            var circle_marker_b29e0dbfc4b7cb0b16beff2b24c4b708 = L.circleMarker(
+                [40.69512845, -73.99595065],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.58257569495584, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_1c5e6a8ffb9836c665b357c7fc4099d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8bed687565eaa27b566d4d4b1589465 = $(`<div id="html_b8bed687565eaa27b566d4d4b1589465" style="width: 100.0%; height: 100.0%;">Station: Hicks St & Montague St<br>Total Trips: 84<br>Avg Trip Duration: 15 min<br>Avg Rider Age: 52</div>`)[0];
+                popup_1c5e6a8ffb9836c665b357c7fc4099d9.setContent(html_b8bed687565eaa27b566d4d4b1589465);
+            
+        
+
+        circle_marker_b29e0dbfc4b7cb0b16beff2b24c4b708.bindPopup(popup_1c5e6a8ffb9836c665b357c7fc4099d9)
+        ;
+
+        
+    
+    
+            var circle_marker_640ec83b0283f424349cb47bfcd5545f = L.circleMarker(
+                [40.7652654, -73.98192338],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.365459931328117, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_57ac165e0f314ff1d25f75351b4ba169 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfb6affc54d19decfc494bf8ae9eefd3 = $(`<div id="html_cfb6affc54d19decfc494bf8ae9eefd3" style="width: 100.0%; height: 100.0%;">Station: Broadway & W 55 St<br>Total Trips: 217<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_57ac165e0f314ff1d25f75351b4ba169.setContent(html_cfb6affc54d19decfc494bf8ae9eefd3);
+            
+        
+
+        circle_marker_640ec83b0283f424349cb47bfcd5545f.bindPopup(popup_57ac165e0f314ff1d25f75351b4ba169)
+        ;
+
+        
+    
+    
+            var circle_marker_65d3df88c4970589b73c97cd01ec0b92 = L.circleMarker(
+                [40.72368361, -73.97574813],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.958039891549808, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_3f434e0c2ca0043824026614161cb080 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8168f269c601c52304f1a9746f9d18a = $(`<div id="html_f8168f269c601c52304f1a9746f9d18a" style="width: 100.0%; height: 100.0%;">Station: Avenue D & E 8 St<br>Total Trips: 35<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_3f434e0c2ca0043824026614161cb080.setContent(html_f8168f269c601c52304f1a9746f9d18a);
+            
+        
+
+        circle_marker_65d3df88c4970589b73c97cd01ec0b92.bindPopup(popup_3f434e0c2ca0043824026614161cb080)
+        ;
+
+        
+    
+    
+            var circle_marker_aa3af56853b0018f906ff6d3ca4d9ba6 = L.circleMarker(
+                [40.69580705, -73.97355569],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7080992435478315, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_f3439a9ec90baf0f7dbd73a39f48afdf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53dc7d194c50904a04cd9cfc166134e2 = $(`<div id="html_53dc7d194c50904a04cd9cfc166134e2" style="width: 100.0%; height: 100.0%;">Station: Carlton Ave & Park Ave<br>Total Trips: 55<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_f3439a9ec90baf0f7dbd73a39f48afdf.setContent(html_53dc7d194c50904a04cd9cfc166134e2);
+            
+        
+
+        circle_marker_aa3af56853b0018f906ff6d3ca4d9ba6.bindPopup(popup_f3439a9ec90baf0f7dbd73a39f48afdf)
+        ;
+
+        
+    
+    
+            var circle_marker_744b15d37c9390a5f84ba3f831ec26aa = L.circleMarker(
+                [40.7643971, -73.97371465],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.04673846971554, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_81c61cb90ba79d39865579f6e4643775 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30f94603b4a6c3c16bb8c8d121a646fc = $(`<div id="html_30f94603b4a6c3c16bb8c8d121a646fc" style="width: 100.0%; height: 100.0%;">Station: Grand Army Plaza & Central Park S<br>Total Trips: 259<br>Avg Trip Duration: 20 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_81c61cb90ba79d39865579f6e4643775.setContent(html_30f94603b4a6c3c16bb8c8d121a646fc);
+            
+        
+
+        circle_marker_744b15d37c9390a5f84ba3f831ec26aa.bindPopup(popup_81c61cb90ba79d39865579f6e4643775)
+        ;
+
+        
+    
+    
+            var circle_marker_da6e92aa84c450798fb746b251192b61 = L.circleMarker(
+                [40.76269882, -73.99301222],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.916079783099616, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_f7922fa8b8caa862e41ca55d18254e2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b9714048a4c6bb7aad5144804d7889a = $(`<div id="html_0b9714048a4c6bb7aad5144804d7889a" style="width: 100.0%; height: 100.0%;">Station: W 47 St & 10 Ave<br>Total Trips: 140<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_f7922fa8b8caa862e41ca55d18254e2b.setContent(html_0b9714048a4c6bb7aad5144804d7889a);
+            
+        
+
+        circle_marker_da6e92aa84c450798fb746b251192b61.bindPopup(popup_f7922fa8b8caa862e41ca55d18254e2b)
+        ;
+
+        
+    
+    
+            var circle_marker_5894b15cb1afc4b553b64d6f06e48f76 = L.circleMarker(
+                [40.68216564, -73.95399026],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0615528128088303, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_940c20331b204c27cc7c5d1b4b59720f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_804c424a7538e94f8f89d92d0ad2e59c = $(`<div id="html_804c424a7538e94f8f89d92d0ad2e59c" style="width: 100.0%; height: 100.0%;">Station: Hancock St & Bedford Ave<br>Total Trips: 17<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 47</div>`)[0];
+                popup_940c20331b204c27cc7c5d1b4b59720f.setContent(html_804c424a7538e94f8f89d92d0ad2e59c);
+            
+        
+
+        circle_marker_5894b15cb1afc4b553b64d6f06e48f76.bindPopup(popup_940c20331b204c27cc7c5d1b4b59720f)
+        ;
+
+        
+    
+    
+            var circle_marker_fe8ed5ab1d4d2b62e36f065628a893ee = L.circleMarker(
+                [40.73314259, -73.97573881],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.422616289332565, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_257335f732b889abc01f1606285d9113 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c9ba971b7a6817d8d42d43364f9b700 = $(`<div id="html_0c9ba971b7a6817d8d42d43364f9b700" style="width: 100.0%; height: 100.0%;">Station: E 20 St & FDR Drive<br>Total Trips: 165<br>Avg Trip Duration: 16 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_257335f732b889abc01f1606285d9113.setContent(html_0c9ba971b7a6817d8d42d43364f9b700);
+            
+        
+
+        circle_marker_fe8ed5ab1d4d2b62e36f065628a893ee.bindPopup(popup_257335f732b889abc01f1606285d9113)
+        ;
+
+        
+    
+    
+            var circle_marker_727de85040232a028d048d16e0ba8bd5 = L.circleMarker(
+                [40.74238787, -73.99726235],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.108637370113428, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_2cdd5cb09764f0df8ca1dde15b9c3c39 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_daf22adc3bf86f6cbbc67513b3a169ca = $(`<div id="html_daf22adc3bf86f6cbbc67513b3a169ca" style="width: 100.0%; height: 100.0%;">Station: W 20 St & 7 Ave<br>Total Trips: 263<br>Avg Trip Duration: 12 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_2cdd5cb09764f0df8ca1dde15b9c3c39.setContent(html_daf22adc3bf86f6cbbc67513b3a169ca);
+            
+        
+
+        circle_marker_727de85040232a028d048d16e0ba8bd5.bindPopup(popup_2cdd5cb09764f0df8ca1dde15b9c3c39)
+        ;
+
+        
+    
+    
+            var circle_marker_26b9e647bcb757b5350ca28aa614ce45 = L.circleMarker(
+                [40.73454567, -73.99074142],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.024968827881711, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_637d3b70ad67af1c86f6263f2528630f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8eb172c60b0a6ebfc761c2739aeceb8 = $(`<div id="html_c8eb172c60b0a6ebfc761c2739aeceb8" style="width: 100.0%; height: 100.0%;">Station: Broadway & E 14 St<br>Total Trips: 402<br>Avg Trip Duration: 12 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_637d3b70ad67af1c86f6263f2528630f.setContent(html_c8eb172c60b0a6ebfc761c2739aeceb8);
+            
+        
+
+        circle_marker_26b9e647bcb757b5350ca28aa614ce45.bindPopup(popup_637d3b70ad67af1c86f6263f2528630f)
+        ;
+
+        
+    
+    
+            var circle_marker_90969dc2475aa4b31cb8c6db143bea3e = L.circleMarker(
+                [40.7172274, -73.98802084],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.809475019311125, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_a277de6cb6e8964b42fb13dc3b5d2848 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aca4715283db9417a55889c35c1c854d = $(`<div id="html_aca4715283db9417a55889c35c1c854d" style="width: 100.0%; height: 100.0%;">Station: Norfolk St & Broome St<br>Total Trips: 135<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 50</div>`)[0];
+                popup_a277de6cb6e8964b42fb13dc3b5d2848.setContent(html_aca4715283db9417a55889c35c1c854d);
+            
+        
+
+        circle_marker_90969dc2475aa4b31cb8c6db143bea3e.bindPopup(popup_a277de6cb6e8964b42fb13dc3b5d2848)
+        ;
+
+        
+    
+    
+            var circle_marker_4ab92d399c4ec9a6f9675ece4ff1dc99 = L.circleMarker(
+                [40.770513, -73.988038],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.264982043070834, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_15b64acc012e19a164af3a3d9986dff5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83e35b353490082cf36d4795b79d55e9 = $(`<div id="html_83e35b353490082cf36d4795b79d55e9" style="width: 100.0%; height: 100.0%;">Station: W 59 St & 10 Ave<br>Total Trips: 157<br>Avg Trip Duration: 16 min<br>Avg Rider Age: 49</div>`)[0];
+                popup_15b64acc012e19a164af3a3d9986dff5.setContent(html_83e35b353490082cf36d4795b79d55e9);
+            
+        
+
+        circle_marker_4ab92d399c4ec9a6f9675ece4ff1dc99.bindPopup(popup_15b64acc012e19a164af3a3d9986dff5)
+        ;
+
+        
+    
+    
+            var circle_marker_449a56469ea468e7673ff895ba230687 = L.circleMarker(
+                [40.7597108, -73.97402311],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.244997998398398, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_1fae735895d3984f7ad21efd36b562fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0f2e2ed142c0128779aaa8600464c30 = $(`<div id="html_d0f2e2ed142c0128779aaa8600464c30" style="width: 100.0%; height: 100.0%;">Station: E 53 St & Madison Ave<br>Total Trips: 156<br>Avg Trip Duration: 14 min<br>Avg Rider Age: 51</div>`)[0];
+                popup_1fae735895d3984f7ad21efd36b562fa.setContent(html_d0f2e2ed142c0128779aaa8600464c30);
+            
+        
+
+        circle_marker_449a56469ea468e7673ff895ba230687.bindPopup(popup_1fae735895d3984f7ad21efd36b562fa)
+        ;
+
+        
+    
+    
+            var circle_marker_f060063a0c2bd91c482521d4bbae89fb = L.circleMarker(
+                [40.72453734, -73.98185424],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0710678118654755, "stroke": true, "weight": 3}
+            ).addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+        var popup_43c17e15a7207ed68fbd75f19449c924 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ce4817ff4a6a1e9a8cc7770633ca90e = $(`<div id="html_6ce4817ff4a6a1e9a8cc7770633ca90e" style="width: 100.0%; height: 100.0%;">Station: E 6 St & Avenue B<br>Total Trips: 200<br>Avg Trip Duration: 13 min<br>Avg Rider Age: 48</div>`)[0];
+                popup_43c17e15a7207ed68fbd75f19449c924.setContent(html_6ce4817ff4a6a1e9a8cc7770633ca90e);
+            
+        
+
+        circle_marker_f060063a0c2bd91c482521d4bbae89fb.bindPopup(popup_43c17e15a7207ed68fbd75f19449c924)
+        ;
+
+        
+    
+    
+            tile_layer_45e7dd1f65527e03f2e43e510dccb8bb.addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+            var heat_map_3bcefcb368774cf189b7fdfa9318e389 = L.heatLayer(
+                [[40.73221853, -73.98165557, 213], [40.73416059, -73.98024289, 163], [40.74144387, -73.97536082, 143], [40.75001986, -73.96905301, 75], [40.75066386, -74.00176802, 170], [40.751396, -74.005226, 119], [40.76030096, -73.99884222, 165], [40.76087502, -74.00277668, 199], [40.74290902, -73.97706058, 265], [40.76020258, -73.96478473, 151], [40.68683208, -73.9796772, 15], [40.7451677, -73.98683077, 200], [40.724399, -74.004704, 64], [40.72243797, -74.00566443, 116], [40.74901271, -73.98848395, 215], [40.69892054, -73.97332996, 5], [40.75044999, -73.99481051, 410], [40.751551, -73.993934, 271], [40.76370739, -73.9851615, 194], [40.7405826, -74.00550867, 269], [40.74206539, -74.00443172, 227], [40.74317449, -74.00366443, 149], [40.7454973, -74.00197139, 228], [40.76019252, -73.9912551, 226], [40.69308257, -73.97178913, 55], [40.722055, -73.989111, 164], [40.71605866, -73.99190759, 147], [40.72019576, -73.98997825, 252], [40.68528172, -73.97805813, 111], [40.68382604, -73.97632328, 83], [40.69165183, -73.9999786, 70], [40.72580614, -73.97422494, 35], [40.72082834, -73.97793172, 71], [40.72368361, -73.97574813, 35], [40.73652889, -74.00618026, 180], [40.7361967, -74.00859207, 151], [40.71291224, -74.01020234, 263], [40.73172428, -74.00674436, 283], [40.71602118, -73.99974372, 167], [40.70853074, -73.96408963, 20], [40.71622644, -73.98261206, 72], [40.68807003, -73.98410637, 64], [40.70365182, -74.01167797, 66], [40.70463334, -74.01361706, 140], [40.71044554, -73.96525063, 43], [40.73454567, -73.99074142, 402], [40.7403432, -73.98955109, 300], [40.7423543, -73.98915076, 342], [40.7462009, -73.98855723, 217], [40.74854862, -73.98808416, 219], [40.75097711, -73.98765428, 113], [40.75172632, -73.98753523, 117], [40.75299641, -73.98721619, 150], [40.75513557, -73.98658032, 193], [40.76064679, -73.98442659, 202], [40.76228826, -73.98336183, 174], [40.76344058, -73.98268129, 229], [40.7652654, -73.98192338, 217], [40.76695317, -73.98169333, 289], [40.76915505, -73.98191841, 360], [40.69991755, -73.98971773, 11], [40.69597683, -73.99014892, 66], [40.71427487, -73.98990025, 164], [40.69580705, -73.97355569, 55], [40.73038599, -74.00214988, 298], [40.71117444, -73.99682619, 45], [40.76590936, -73.97634151, 255], [40.71273266, -74.0046073, 290], [40.71494807, -74.00234482, 126], [40.71219906, -73.97948148, 74], [40.73291553, -74.00711384, 282], [40.71743998, -74.00583475, 119], [40.69760127, -73.99344559, 121], [40.68764484, -73.96968902, 37], [40.69573398, -73.97129668, 14], [40.7218158, -73.99720307, 345], [40.70823502, -74.00530063, 150], [40.69794, -73.96986848, 19], [40.693261, -73.968896, 61], [40.71559509, -73.9870295, 118], [40.69239502, -73.99337909, 54], [40.696192, -73.991218, 73], [40.70037867, -73.99548059, 50], [40.71739973, -73.98016555, 69], [40.69766564, -73.98476437, 22], [40.68753406, -73.97265183, 46], [40.689888, -73.981013, 68], [40.68981035, -73.97493121, 42], [40.6906495, -73.95643107, 22], [40.68940747, -73.96885458, 47], [40.68312489, -73.97895137, 80], [40.71413089, -73.9970468, 116], [40.71748752, -74.0104554, 108], [40.69221589, -73.9842844, 36], [40.73331967, -73.99510132, 162], [40.72740794, -73.98142006, 174], [40.72953837, -73.98426726, 207], [40.73047309, -73.98672378, 244], [40.73261787, -73.99158043, 132], [40.73223272, -73.98889957, 203], [40.72955361, -73.98057249, 217], [40.72938685, -73.97772429, 173], [40.734232, -73.986923, 150], [40.73726186, -73.99238967, 210], [40.73524276, -73.98758561, 215], [40.73704984, -73.99009296, 496], [40.73624527, -73.98473765, 194], [40.72502876, -73.99069656, 140], [40.72217444, -73.98368779, 176], [40.7208736, -73.98085795, 99], [40.73587678, -73.98205027, 210], [40.73314259, -73.97573881, 165], [40.73827428, -73.98751968, 98], [40.736502, -73.97809472, 195], [40.7381765, -73.97738662, 125], [40.73912601, -73.97973776, 239], [40.739445, -73.976806, 92], [40.72467721, -73.98783413, 157], [40.74444921, -73.98303529, 181], [40.74394314, -73.97966069, 276], [40.7457121, -73.98194829, 253], [40.74315566, -73.97434726, 207], [40.74765947, -73.98490707, 116], [40.748238, -73.978311, 128], [40.74780373, -73.9734419, 293], [40.7489006, -73.97604882, 197], [40.7262807, -73.98978041, 233], [40.75206231, -73.9816324, 206], [40.75022392, -73.97121414, 110], [40.75320159, -73.9779874, 328], [40.75255434, -73.97282625, 124], [40.75206862, -73.96784384, 32], [40.75323098, -73.97032517, 126], [40.75510267, -73.97498696, 156], [40.7546011, -73.97187886, 149], [40.72299208, -73.97995466, 89], [40.75455731, -73.96592976, 101], [40.75714758, -73.97207836, 140], [40.756014, -73.967416, 104], [40.75828065, -73.97069431, 148], [40.7597108, -73.97402311, 156], [40.75797322, -73.96603308, 116], [40.75968085, -73.97031366, 81], [40.75934501, -73.96759673, 144], [40.761628, -73.972924, 98], [40.76095756, -73.96724467, 196], [40.75849116, -73.95920622, 99], [40.72453734, -73.98185424, 200], [40.72228087, -73.97668709, 57], [40.72621788, -73.98379855, 193], [40.72521311, -73.97768752, 157], [40.71729, -73.996375, 176], [40.69363137, -73.96223558, 34], [40.744219, -73.97121214, 163], [40.69788349, -73.97350332, 30], [40.71893904, -73.99266288, 178], [40.7158155, -73.99422366, 112], [40.694528, -73.958089, 8], [40.71911552, -74.00666661, 139], [40.70224, -73.982578, 33], [40.70530954, -74.00612572, 127], [40.70255088, -73.98940236, 118], [40.68415748, -73.96922273, 23], [40.68223166, -73.9614583, 38], [40.687979, -73.978474, 95], [40.68317813, -73.9659641, 65], [40.70955958, -74.00653609, 112], [40.69028437, -73.98707105, 25], [40.7643971, -73.97371465, 259], [40.72165481, -74.00234737, 112], [40.71286844, -73.95698119, 65], [40.72743423, -73.99379025, 182], [40.73901691, -74.00263761, 359], [40.735238, -74.000271, 124], [40.72043411, -74.01020609, 190], [40.71542197, -74.01121978, 282], [40.68216564, -73.95399026, 17], [40.68864636, -73.98263429, 14], [40.71870987, -74.0090009, 94], [40.69089272, -73.99612349, 78], [40.714215, -73.981346, 94], [40.700469, -73.991454, 52], [40.69512845, -73.99595065, 84], [40.71910537, -73.99973337, 208], [40.71625008, -74.0091059, 133], [40.695065, -73.987167, 35], [40.70862144, -74.00722156, 112], [40.69474881, -73.98362464, 61], [40.69246277, -73.98963911, 109], [40.70827295, -73.96834101, 36], [40.72917025, -73.99810231, 233], [40.68900443, -73.96023854, 41], [40.68691865, -73.976682, 54], [40.68851534, -73.9647628, 33], [40.73028666, -73.9907647, 505], [40.72456089, -73.99565293, 104], [40.72185379, -74.00771779, 41], [40.69236178, -73.98631746, 256], [40.68034242, -73.95576894, 51], [40.68676793, -73.95928168, 31], [40.74025878, -73.98409214, 264], [40.74147286, -73.98320928, 255], [40.70905623, -74.01043382, 186], [40.71939226, -74.00247214, 118], [40.70569254, -74.01677685, 129], [40.72710258, -74.00297088, 288], [40.73226398, -73.99852205, 152], [40.68098339, -73.95004798, 27], [40.71269042, -73.98776323, 58], [40.713126, -73.984844, 78], [40.70706456, -74.00731853, 162], [40.71076228, -73.99400398, 47], [40.72679454, -73.99695094, 231], [40.72362738, -73.99949601, 150], [40.71534825, -73.96024116, 118], [40.6851443, -73.95380904, 23], [40.6845683, -73.95881081, 20], [40.69424674, -73.99215922, 67], [40.72317958, -73.99480012, 234], [40.7149787, -74.013012, 105], [40.69327018, -73.97703874, 24], [40.69839895, -73.98068914, 26], [40.7172274, -73.98802084, 135], [40.70277159, -73.99383605, 89], [40.7037992, -74.00838676, 76], [40.69608941, -73.97803415, 11], [40.71336124, -74.00937622, 154], [40.70281858, -73.98765762, 71], [40.7047177, -74.00926027, 127], [40.73535398, -74.00483091, 148], [40.75188406, -73.97770164, 503], [40.75149263, -73.97798848, 285], [40.71406667, -73.99293911, 84], [40.71173107, -73.99193043, 54], [40.71926081, -73.98178024, 39], [40.70531194, -73.97100056, 5], [40.71450451, -74.00562789, 115], [40.72110063, -73.9919254, 135], [40.71850211, -73.98329859, 78], [40.71260486, -73.96264403, 55], [40.71285887, -73.96590294, 55], [40.710451, -73.960876, 122], [40.68539567, -73.97431458, 36], [40.69986937, -73.98271933, 41], [40.728145, -73.990214, 127], [40.711512, -74.015756, 261], [40.70355377, -74.00670227, 141], [40.70122128, -74.01234218, 113], [40.71146364, -74.00552427, 130], [40.71307916, -73.99851193, 82], [40.71117416, -74.00016545, 71], [40.72779126, -73.98564945, 184], [40.7284186, -73.98713956, 196], [40.72229346, -73.99147535, 184], [40.71782143, -73.97628939, 58], [40.70251526, -74.01427023, 150], [40.68926942, -73.98912867, 107], [40.72066442, -73.98517977, 196], [40.73047747, -73.99906065, 211], [40.73492695, -73.99200509, 405], [40.7153379, -74.01658354, 295], [40.73532427, -73.99800419, 151], [40.73543934, -73.99453948, 169], [40.73649403, -73.99704374, 238], [40.73781509, -73.99994661, 200], [40.74195138, -74.00803013, 139], [40.73935542, -73.99931783, 223], [40.74334935, -74.00681753, 169], [40.74177603, -74.00149746, 301], [40.73971301, -73.99456405, 261], [40.746745, -74.007756, 536], [40.74238787, -73.99726235, 263], [40.74345335, -74.00004031, 195], [40.74173969, -73.99415556, 349], [40.74691959, -74.00451887, 289], [40.74475148, -73.99915362, 217], [40.74487634, -73.99529885, 241], [40.74395411, -73.99144871, 252], [40.74971775, -74.00295035, 249], [40.74734825, -73.99723551, 190], [40.746647, -73.993915, 216], [40.7500727, -73.99839279, 152], [40.749156, -73.9916, 251], [40.75019995, -73.99093085, 285], [40.75594159, -74.0021163, 83], [40.75660359, -73.9979009, 182], [40.75038009, -73.98338988, 158], [40.75466591, -73.99138152, 228], [40.75645824, -73.99372222, 265], [40.73401143, -74.00293877, 386], [40.75640548, -73.9900262, 365], [40.7575699, -73.99098507, 151], [40.76009437, -73.99461843, 231], [40.75527307, -73.98316936, 170], [40.75500254, -73.98014437, 126], [40.7568001, -73.98291153, 151], [40.75929124, -73.98859651, 181], [40.76341379, -73.99667444, 137], [40.76269882, -73.99301222, 140], [40.75795248, -73.97787642, 103], [40.76227205, -73.98788205, 206], [40.7606597, -73.98042047, 171], [40.76727216, -73.99392888, 161], [40.75992262, -73.97648516, 125], [40.76461837, -73.98789473, 112], [40.76669671, -73.99061728, 122], [40.76584941, -73.98690506, 97], [40.768254, -73.988639, 100], [40.76340613, -73.97722479, 213], [40.770513, -73.988038, 157], [40.72490985, -74.00154702, 219], [40.72873888, -74.00748842, 305], [40.71473993, -74.00910627, 152], [40.68650065, -73.96563307, 21], [40.69610226, -73.96751037, 33], [40.69178232, -73.97372989, 29], [40.73224119, -74.00026394, 132], [40.72903917, -73.99404649, 187], [40.73049393, -73.9957214, 246], [40.739323, -74.008119, 213], [40.70255065, -74.0127234, 73], [40.72405549, -74.00965965, 180], [40.71754834, -74.01322069, 465], [40.70834698, -74.01713445, 221], [40.70717936, -74.00887308, 123], [40.69196035, -73.96536851, 43], [40.69331716, -73.95381995, 30], [40.69196566, -73.9813018, 55], [40.716887, -73.963198, 94], [40.7014851, -73.98656928, 108]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 15,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_3bcefcb368774cf189b7fdfa9318e389.addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+            tile_layer_45e7dd1f65527e03f2e43e510dccb8bb.addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+    
+            heat_map_3bcefcb368774cf189b7fdfa9318e389.addTo(map_ec2087f5fec405e54c4758fc23c82803);
+        
+</script>
+</html>
