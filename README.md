@@ -97,4 +97,5 @@ H5: Station demand is concentrated in Manhattan near transit hubs.
 - Operational Efficiency: Use demand hotspots to optimize bike rebalancing and reduce shortages.
 
 # Additional Visual Analysis with Tableau
-https://public.tableau.com/app/profile/maxwell.appiah5460/viz/CitiBikeUsageStoryboard/CitiBikeUsageStoryboard?publish=yes
+https://public.tableau.com/app/profile/maxwell.appiah5460/viz/CitiBikeUsageStoryboardUp/CitiBikeUsageStoryboard?publish=yes
+
